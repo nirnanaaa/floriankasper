@@ -22,12 +22,16 @@
       <ul class="nav-bar">
         <li><%= link_to index_schedules_path do%><i class="fa fa-calendar fa-3x"></i><% end%></li>
         <li><a href="https://github.com/nirnanaaa"><i class="fa fa-github fa-3x"></i></a></li>
-        <li><a href="https://twitter.com/officiallyzyg"><i class="fa fa-twitter fa-3x"></i></li>
+        <li><a href="https://twitter.com/officiallyzyg"><i class="fa fa-twitter fa-3x"></i></a></li>
       </ul>
     </div>
   </nav>
-  
-<%= yield %>
+  <div class="body">
+    <div class="inner">
+      <%= yield %>
+    </div>
+  </div>
+
 
 </body>
 </html>

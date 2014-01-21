@@ -56,3 +56,47 @@ a:hover{
   text-decoration: none;
   
 }
+.body{
+  text-align:center;
+  margin-top: 50px;
+}
+.inner{  
+  width: 980px;
+  margin: 0 auto;
+  
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float:right;
+}
+.description{
+  text-align: left;
+}
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+.schedule-top + .clearfix{
+  margin-bottom: 15px;
+}
+.schedule-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.schedule{
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
