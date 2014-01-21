@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlorianKasper.org</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="upper-nav">
+      <h1 class="title">Florian Kasper</h1>
+    </div>
+    <div class="lower-nav">
+      
+      <ul class="nav-bar">
+        <li><%= link_to '/' do%><i class="fa fa-code fa-3x"></i><% end%></li>
+        <li><a href="https://github.com/nirnanaaa"><i class="fa fa-github fa-3x"></i></a></li>
+        <li><a href="https://twitter.com/officiallyzyg"><i class="fa fa-twitter fa-3x"></i></li>
+      </ul>
+    </div>
+  </nav>
+  
+<%= yield %>
+
+</body>
+</html>
