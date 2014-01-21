@@ -15,7 +15,7 @@
 ### END INIT INFO
 
 APP_USER="www-data"
-APP_ROOT="/srv/floriankasper.org/floriankasper"
+APP_ROOT="/srv/web/floriankasper.org/floriankasper"
 DAEMON_OPTS="-C $APP_ROOT/config/puma.rb -e production"
 SOCKET_PATH="$APP_ROOT/tmp"
 SOCKET_FILE="$SOCKET_PATH/homepage.socket"
