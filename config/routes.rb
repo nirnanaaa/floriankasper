@@ -1,6 +1,8 @@
 Homepage::Application.routes.draw do
   resources :pages
   get 'schedules' => 'schedules#index', as: :index_schedules
+  
+  get 'robots.txt' => 'robots#index'
   root "pages#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
