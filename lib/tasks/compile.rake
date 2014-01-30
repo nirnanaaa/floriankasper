@@ -6,16 +6,11 @@ namespace :fk do
   desc "Compile assets and link dart"
   task :compile => :environment do
     dir = Rails.root.join("public", "assets")
-    #main_dart = Rails.root.join("app", "assets", "main.")
+    assets = Rails.root.join("app", "assets", "javascripts")
     Rake::Task["assets:precompile"].invoke
-    files = Dir.glob("#{dir}/main.dart*.js").sort_by{|f| File.mtime(f)}
-    main= files.last
-    
-    Dir.glob("#{dir}/main*.dart").each do |f|
-      FileUtils.cp main, "#{f}.js"
+    Dir.glob(assets+"main.*").each do |e|
+      FileUtils.cp e, dir.join(File.split(e).last)
     end
-    manifest = Dir.glob("#{dir}/manifest*").first
-    
-    json = JSON.parse(File.read(manifest))
+
   end
 end

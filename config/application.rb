@@ -12,9 +12,9 @@ require "sprockets/railtie"
 Bundler.require(:default, Rails.env)
 
 module Homepage
+
   class Application < Rails::Application
-    config.assets.compress = false
-    config.assets.precompile += [ "main.dart.js", "dart.js" ]
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -26,5 +26,6 @@ module Homepage
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
   end
 end
