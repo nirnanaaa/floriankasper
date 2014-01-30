@@ -13,7 +13,7 @@ Bundler.require(:default, Rails.env)
 
 module Homepage
   class Application < Rails::Application
-    
+    config.assets.compress = false
     config.assets.precompile += [ "main.dart.js", "dart.js" ]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
