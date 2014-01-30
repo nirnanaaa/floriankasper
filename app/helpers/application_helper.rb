@@ -1,5 +1,6 @@
 module ApplicationHelper
   def dart_include_tag
-    javascript_include_tag "main.dart", type: 'application/dart'
+    content_tag(:script, nil, :src => asset_path("main.dart"), :type => 'application/dart') +
+    content_tag(:script, nil, src: asset_path("dart.js"), type: 'text/javascript')
   end
 end
