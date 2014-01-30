@@ -2,6 +2,7 @@ import 'package:di/di.dart';
 import 'package:angular/angular.dart';
 
 import 'homepage.dart';
+import 'pages.dart';
 
 // This annotation allows Dart to shake away any classes
 // not used from Dart code nor listed in another @MirrorsUsed.
@@ -19,6 +20,7 @@ import 'homepage.dart';
   'angular.core.parser.dynamic_parser',
   'angular.core.parser.lexer',
   'homepage',
+  'pages',
   'perf_api',
   'List',
   'NodeTreeSanitizer'
@@ -31,6 +33,8 @@ main() {
 
   var module = new Module()
     ..type(HomepageController)
+    ..type(PagesController)
+    ..type(PagesServer)
     ..type(ServerController);
      
   ngBootstrap(module: module);
