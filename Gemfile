@@ -4,8 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'gollum_rails'
 gem 'redcarpet'
-gem 'asset_sync'
 
+group :development do
+  gem 'asset_sync'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
