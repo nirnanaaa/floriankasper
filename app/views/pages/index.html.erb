@@ -8,3 +8,16 @@
     <div class="description" ng-bind-html="page.text"></div>
   </div>
 </div>
+
+<noscript>
+  <% @pages.each do |page| %>
+    <div class="pages" >
+      <div class="schedule-top">
+        <div class="schedule-title float-left"><%= page.title %></div>
+        <div class="schedule-date float-right"><%= page.date %></div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="description"> <%= page.html_data.html_safe%></div>
+    </div> 
+  <% end%>
+</noscript>
