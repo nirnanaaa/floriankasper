@@ -1,10 +1,11 @@
-<% @pages.each do |page| %>
-  <div class="schedule">
+<div homepage-controller class="homepage-controller" ng-cloak>
+  <div class="schedule" ng-repeat="schedule in homepage.schedules" >
     <div class="schedule-top">
-      <div class="schedule-title float-left"><%= page.title %></div>
-      <div class="schedule-date float-right"><%= page.date%></div>
+      <div class="schedule-title float-left">{{schedule.title}}</div>
+      <div class="schedule-date float-right">{{schedule.date| date:'medium'}}</div>
     </div>
     <div class="clearfix"></div>
-    <div class="description"><%= page.html_data.html_safe%></div>
+    <div class="description" ng-bind-html="schedule.text"></div>
   </div>
-<% end%>
+
+</div>
