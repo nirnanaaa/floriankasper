@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'gollum_rails'
 gem 'redcarpet'
+gem 'asset_sync'
+gem 'ruby-dart', :git => 'https://github.com/amiuhle/ruby-dart.git'
+gem 'dart-rails', :git => 'https://github.com/amiuhle/dart-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
