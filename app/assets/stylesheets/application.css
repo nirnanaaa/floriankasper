@@ -75,12 +75,12 @@ a:hover{
   text-align: left;
 }
 
-
 .schedule-top + .clearfix{
   margin-bottom: 15px;
+  
 }
 .schedule-title{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 .schedule{

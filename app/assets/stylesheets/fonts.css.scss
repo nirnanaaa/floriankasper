@@ -1,71 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Stalemate);
-/* Regular */
-@font-face {
-    font-family: 'League Gothic';
-    src: asset-url('leaguegothic-italic-webfont.eot');
-    src: asset-url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('leaguegothic-italic-webfont.woff') format('woff'),
-         asset-url('leaguegothic-italic-webfont.ttf') format('truetype'),
-         asset-url('leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
-/* Italic */
-@font-face {
-    font-family: 'League Gothic';
-    src: asset-url('leaguegothic-regular-webfont.eot');
-    src: asset-url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('leaguegothic-regular-webfont.woff') format('woff'),
-         asset-url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         asset-url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* Condensed */
-@font-face {
-    font-family: 'League Gothic Condensed';
-    src: asset-url('leaguegothic-condensed-regular-webfont.eot');
-    src: asset-url('leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('leaguegothic-condensed-regular-webfont.woff') format('woff'),
-         asset-url('leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
-         asset-url('leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* Condensed Italic */
-@font-face {
-    font-family: 'League Gothic Condensed';
-    src: asset-url('leaguegothic-condensed-italic-webfont.eot');
-    src: asset-url('leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('leaguegothic-condensed-italic-webfont.woff') format('woff'),
-         asset-url('leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
-         asset-url('leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 
 
 body {
-  font-family: 'League Gothic';
+  font-family: 'Roboto'!important;
+  //font-weight: 700; 
   font-size: 13px;
-  font-weight: normal;
   font-style: normal;
   letter-spacing: 1.1px;
 }
-/*i{
-  font-family: 'League Gothic';
-  font-size: 17px;
-  font-weight: normal;
-  font-style: italic;
-}*/
 b{
   
+}
+.date{
+  font-family: 'Roboto'; 
+  font-size: 12px;
 }
 h1.title { 
   font-family: 'Stalemate', cursive; 
