@@ -13,7 +13,6 @@
   <meta name="page-type" content="Private Homepage">
   <meta http-equiv="content-language" content="en-us">
   <meta name="robots" content="index, follow">
-  
   <link rel="apple-touch-icon" href="<%= asset_path('apple-touch-icon-iphone.png') %>" />
   <link rel="apple-touch-icon" sizes="72x72" href="<%= asset_path('apple-touch-icon-ipad.png') %>"  />
   <link rel="apple-touch-icon" sizes="114x114" href="<%= asset_path('apple-touch-icon-iphone4.png') %>" />
@@ -28,7 +27,6 @@
       <h1 class="title">Florian Kasper</h1>
     </div>
     <div class="lower-nav">
-      
       <ul class="nav-bar">
         <li><%= link_to index_schedules_path do%><i class="fa fa-calendar fa-3x"></i><% end%></li>
         <li><a href="https://github.com/nirnanaaa"><i class="fa fa-github fa-3x"></i></a></li>
@@ -39,21 +37,9 @@
   
   <div class="body">
     <div class="inner">
-      <div ng-hide="true" class="border loading">
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
-        </div>
-      </div>
-
-        <%= yield %>
+      <%= yield %>
     </div>
   </div>
   
-  <%= dart_include_tag %>
-
 </body>
 </html>
