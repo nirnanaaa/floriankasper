@@ -6,10 +6,8 @@ gem 'gollum_rails', '~> 1.5.5'
 gem 'redcarpet'
 gem 'breakpoint'
 
-group :development do
-  gem 'asset_sync'
-  gem 'unf'
-end
+gem 'asset_sync'
+gem 'unf'
 
 
 # Use SCSS for stylesheets
