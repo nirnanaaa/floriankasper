@@ -7,18 +7,16 @@ $normal: 1136px;
 
 body {
   font-family: 'Roboto'!important;
-  //font-weight: 700; 
   font-size: 13px;
   font-style: normal;
   letter-spacing: 1.1px;
 }
-b{
-  
-}
+
 .date{
   font-family: 'Roboto'; 
   font-size: 12px;
 }
+
 .__heading--title { 
   font-family: 'Stalemate', cursive; 
   @include breakpoint($iphone) {
