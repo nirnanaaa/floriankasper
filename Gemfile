@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
-gem 'gollum_rails'
+gem 'rails', '4.0.3'
+gem 'gollum_rails', '~> 1.5.5'
 gem 'redcarpet'
 gem 'breakpoint'
 
