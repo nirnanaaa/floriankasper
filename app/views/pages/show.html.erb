@@ -1,5 +1,5 @@
 <article class="__article--main">
   <h2 class="__article--title typography--SECONDARY-HEADING"><%= @page.title %></h2>
-  <div class="__article--date typography--DATE"><%= @page.date.strftime("%d-%m-%Y") %></div>
+  <div class="__article--date typography--DATE"><%= Time.parse(@page.date).strftime("%d-%m-%Y") %></div>
   <div class="__article--description typography--AREA"><%= @page.html_data.html_safe %></div>
 </article>
