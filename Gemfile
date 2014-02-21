@@ -6,10 +6,6 @@ gem 'gollum_rails', '~> 1.5.5'
 gem 'redcarpet'
 gem 'breakpoint'
 
-gem 'asset_sync'
-gem 'unf'
-
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
