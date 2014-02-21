@@ -17,3 +17,4 @@
 /db/development.git
 /db/test.git
 public/assets/
+config/asset_sync.yml
