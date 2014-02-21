@@ -3,7 +3,8 @@
   <% @pages.each do |page| %>
     <sitemap>
       <loc>https://floriankasper.org<%= url_for pg_path(Gollum::Page.cname(page.name)) %></loc>
-      <lastmod><%= page.date %></lastmod>
+      <lastmod><%= Time.parse(page.date).strftime( "%Y-%m-%dT%H:%M:%SZ" ) %></lastmod>
+      <changefreq>monthly</changefreq>
    </sitemap>
  <% end %>
 </sitemapindex>
