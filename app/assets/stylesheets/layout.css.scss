@@ -1,0 +1,15 @@
+@import 'breakpoint';
+
+$iphone: 5px 1136px;
+$normal: 1136px;
+
+.inner {
+  @include breakpoint($iphone) {
+    padding: 5px;
+    width: 100%;
+  }
+  @include breakpoint($normal) {
+    width: 960px;
+    margin: 0 auto;
+  }
+}

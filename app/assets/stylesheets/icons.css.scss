@@ -1,0 +1,18 @@
+@import 'breakpoint';
+
+$iphone: 5px 1136px;
+$normal: 1136px;
+
+.__heading--icons li a i {
+  -webkit-transition: font-size .5s ease-in;
+  -moz-transition: font-size .5s ease-in;
+  -o-transition: font-size .5s ease-in;
+  transition: font-size .5s ease-in;
+  @include breakpoint($iphone){
+    font-size: 2em;
+  }
+  @include breakpoint($normal) {
+    font-size: 3em;
+  }
+
+}

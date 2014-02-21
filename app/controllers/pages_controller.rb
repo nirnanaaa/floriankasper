@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def index
     @pages = Page.all(folder: 'articles')
-    @pages.sort!{ |a,b| a.date <=> b.date}
+    @pages.sort!{ |b,a| a.date <=> b.date}
     respond_to do |format|
       format.html{}
       format.json do
@@ -11,6 +11,8 @@ class PagesController < ApplicationController
   end
   
   def show
-    @page = Page.find(params[:id])
+    @page = Page.find(params[:id], Page.wiki.ref, true, false)
+    @meta[:description] = @page.description if @page.description
+    @meta[:keywords] = @page.keywords if @page.keywords
   end
 end

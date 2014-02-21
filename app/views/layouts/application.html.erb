@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>FlorianKasper.org</title>
-  <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="author" content="Florian Kasper">
   <meta name="publisher" content="Florian Kasper">
   <meta name="copyright" content="Florian Kasper">
-  <meta name="description" content="my blog about all interesting things in technology.">
-  <meta name="keywords" content="ruby,html,dart,scala,javascript,coffeescript,redmine,gollum">
+  <meta name="description" content="<%= @meta[:description] || 'my blog about all interesting things in technology.' %>">
+  <meta name="keywords" content="<%= @meta[:keywords] ? @meta[:keywords].join(',') : 'ruby,html,dart,scala,javascript,coffeescript,redmine,gollum' %>">
   <meta name="page-topic" content="Development">
   <meta name="page-type" content="Private Homepage">
   <meta http-equiv="content-language" content="en-us">
@@ -21,16 +21,16 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body ng-app>
-  <nav class="top-nav">
-    <div class="upper-nav">
-      <h1 class="title">Florian Kasper</h1>
+<body>
+  <nav class="top-nav __heading--main">
+    <div class="upper-nav __heading--sub-main">
+      <h1 class="__heading--title typography--PRIMARY-HEADING">Florian Kasper</h1>
     </div>
-    <div class="lower-nav">
-      <ul class="nav-bar">
-        <li><%= link_to index_schedules_path do%><i class="fa fa-calendar fa-3x"></i><% end%></li>
-        <li><a href="https://github.com/nirnanaaa"><i class="fa fa-github fa-3x"></i></a></li>
-        <li><a href="https://twitter.com/officiallyzyg"><i class="fa fa-twitter fa-3x"></i></a></li>
+    <div class="lower-nav __heading--sub-secondary">
+      <ul class="nav-bar __heading--icons">
+        <li><%= link_to index_schedules_path do%><i class="fa fa-calendar"></i><% end%></li>
+        <li><a href="https://github.com/nirnanaaa"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/officiallyzyg"><i class="fa fa-twitter"></i></a></li>
       </ul>
     </div>
   </nav>

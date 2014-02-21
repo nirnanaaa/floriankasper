@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Stalemate);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@import 'breakpoint';
 
+$iphone: 5px 1136px;
+$normal: 1136px;
 
 body {
   font-family: 'Roboto'!important;
@@ -16,8 +19,13 @@ b{
   font-family: 'Roboto'; 
   font-size: 12px;
 }
-h1.title { 
+.__heading--title { 
   font-family: 'Stalemate', cursive; 
-  font-size: 90px;
+  @include breakpoint($iphone) {
+    font-size: 70px;
+  }
+  @include breakpoint($normal) {
+    font-size: 90px;
+  }
   color: #102E37;
 }

@@ -11,6 +11,7 @@
  *= require normalize
  *= require fonts
  *= require font-awesome
+ *= require sizing
  *= require_self
  *= require_tree .
  */
@@ -37,7 +38,7 @@ html,body{
   margin: 0;
   list-style-type: none;
 }
-.nav-bar>li{
+.nav-bar > li{
   color: #102E37;
   font-size: 23px;
   margin: 10px;
@@ -59,11 +60,6 @@ a:hover{
 .body{
   text-align:center;
   margin-top: 50px;
-}
-.inner{  
-  width: 980px;
-  margin: 0 auto;
-  
 }
 .float-left{
   float: left;
@@ -87,10 +83,4 @@ a:hover{
   margin-top: 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
-}
-.ng-hide {
-  display: none;
-}
-[ng-cloak] {
-  display: none;
 }

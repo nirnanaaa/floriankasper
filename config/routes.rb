@@ -4,6 +4,8 @@ Homepage::Application.routes.draw do
   
   get 'robots.txt' => 'robots#index'
   root "pages#index"
+  
+  get ':id' => 'pages#show', as: :pg, constraints: { id: /.*/ }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
