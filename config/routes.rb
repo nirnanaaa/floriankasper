@@ -3,6 +3,7 @@ Homepage::Application.routes.draw do
   get 'schedules' => 'schedules#index', as: :index_schedules
   
   get 'robots.txt' => 'robots#index'
+  get 'sitemap.xml' => 'robots#sitemap'
   root "pages#index"
   
   get ':id' => 'pages#show', as: :pg, constraints: { id: /.*/ }

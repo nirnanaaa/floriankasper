@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <% @pages.each do |page| %>
+    <sitemap>
+      <loc>https://floriankasper.org<%= url_for pg_path(Gollum::Page.cname(page.name)) %></loc>
+      <lastmod><%= page.date %></lastmod>
+   </sitemap>
+ <% end %>
+</sitemapindex>
