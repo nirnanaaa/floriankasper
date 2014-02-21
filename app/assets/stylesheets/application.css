@@ -11,7 +11,14 @@
  *= require font-awesome
  *= require sizing
  *= require_self
- *= require_tree .
+ *= require article
+ *= require typography
+ *= require schedules
+ *= require pages
+ *= require layout
+ *= require icons
+ *= require clearfix
+ *= require bootstrap
  */
 html,body{
   width: 100%;
