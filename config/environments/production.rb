@@ -29,6 +29,11 @@ Homepage::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.static_cache_control = 'public, max-age=31536000'
+  config.middleware.use Rack::Deflater
+  
+  config.middleware.insert_before(
+   "Rack::Cache", Middleware::CompressedStaticAssets,
+    paths["public"].first, config.assets.prefix, { 'Cache-Control' => "public, max-age=31536000" })
   config.assets.compile = false
 
   # Generate digests for assets URLs.
