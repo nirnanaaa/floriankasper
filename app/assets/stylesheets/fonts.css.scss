@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Stalemate);
+//@wimport url(https://fonts.googleapis.com/css?family=Stalemate);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 @import 'breakpoint';
 
@@ -6,14 +7,13 @@ $iphone: 5px 1136px;
 $normal: 1136px;
 
 body {
-  font-family: 'Roboto'!important;
-  font-size: 13px;
+  font-family: 'Open Sans', arial, verdana, tahoma, sans-serif!important;
+  font-size: 14px;
   font-style: normal;
-  letter-spacing: 1.1px;
+  letter-spacing: normal!important;
 }
 
 .date{
-  font-family: 'Roboto'; 
   font-size: 12px;
 }
 
