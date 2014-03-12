@@ -2,7 +2,7 @@
   <section class="pages">
     <div class="schedule-top">
       <h2 class="__article--title"><%= link_to page.title, pg_path(Gollum::Page.cname(page.name)) %></h2>
-      <div class="__article--date"><%= Time.parse(page.date).strftime("%d-%m-%Y") %></div>
+      <div class="__article--date"><%= Time.parse(page.date.to_s).strftime("%d-%m-%Y") %></div>
     </div>
     <div class="clearfix"></div>
     <div class="description typography--AREA"> <%= page.html_data.html_safe%></div>

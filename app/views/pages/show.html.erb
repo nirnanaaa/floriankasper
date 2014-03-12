@@ -1,5 +1,19 @@
 <article class="__article--main">
   <h2 class="__article--title typography--SECONDARY-HEADING"><%= @page.title %></h2>
-  <div class="__article--date typography--DATE"><%= Time.parse(@page.date).strftime("%d-%m-%Y") %></div>
+  <div class="__article--date typography--DATE"><%= Time.parse(@page.date.to_s).strftime("%d-%m-%Y") %></div>
   <div class="__article--description typography--AREA"><%= @page.html_data.html_safe %></div>
-</article>
+</article> 
+<script type="text/javascript">
+    var disqus_shortname = 'nirnanaaa'; // Required - Replace example with your forum shortname
+    var disqus_identifier = '<%= @page.url%>';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<aside class="__comments--main">
+  <div id="disqus_thread"></div>
+</aside>
