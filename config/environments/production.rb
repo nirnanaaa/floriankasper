@@ -30,7 +30,6 @@ Homepage::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.static_cache_control = 'public, max-age=31536000'
   config.middleware.use Rack::Deflater
-  
   config.assets.compile = false
 
   # Generate digests for assets URLs.
@@ -59,6 +58,7 @@ Homepage::Application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
+  config.assets.prefix = "/assets"
   config.action_controller.asset_host = "https://d4bod8uxdbd8v.cloudfront.net"
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
