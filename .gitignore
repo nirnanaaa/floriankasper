@@ -18,3 +18,7 @@
 /db/test.git
 public/assets/
 .DS_Store
+log/puma.stdout.log.1
+log/puma.stderr.log.1
+db/production.git
+db/old/
