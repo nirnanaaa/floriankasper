@@ -11,10 +11,10 @@ gem 'breakpoint'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'sprockets-webp'
 gem 'jacket'
 
 gem "sass", "~>3.2.0"
 gem "singularitygs", "~>1.1.2"
 gem 'compass-rails'
 gem 'puma'
+gem 'asset_sync'
