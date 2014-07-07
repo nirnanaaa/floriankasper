@@ -1,3 +1,4 @@
 install:
   - "libicu-dev"
   - "libssl-dev"
+  - "node"
