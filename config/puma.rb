@@ -3,7 +3,7 @@
 # Start Puma with next command:
 # RAILS_ENV=production bundle exec puma -e production -C ./config/puma.rb
 
-application_path = ENV['PUMA_PATH'] || "/srv/web/floriankasper.org/floriankasper"#File.expand_path('..', __FILE__)# '/srv/web/fk/current'
+application_path = "/data"#|| "/srv/web/floriankasper.org/floriankasper"#File.expand_path('..', __FILE__)# '/srv/web/fk/current'
 
 # The directory to operate out of.
 #
