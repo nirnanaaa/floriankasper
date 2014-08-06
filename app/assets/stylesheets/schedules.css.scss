@@ -1,3 +1,18 @@
 // Place all the styles related to the schedules controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.pages{
+  .description{
+    .__schedule--title{
+      display: inline-block;
+    }
+    .__schedule--date{
+      margin-left: 100px;
+      display: inline-block;
+      font-weight: bold;
+    
+    }
+  }
+
+}

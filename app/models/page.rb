@@ -5,6 +5,14 @@ class Page < GollumRails::Page
   def date
     meta["date"] || Time.at(0)
   end
+  def start
+    DateTime.parse(meta["start"]) || Time.at(0)
+  end
+
+  def end
+    DateTime.parse(meta["end"]) || Time.at(0)
+  end
+
 
   def keywords
     meta["keywords"] || nil
