@@ -1,4 +1,6 @@
 install:
+  - "cmake"
+  - "pkg-config"
   - "libicu-dev"
   - "libssl-dev"
   - "node"
