@@ -3,7 +3,7 @@ Homepage::Application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.wiki_repository = "/homepage-wiki.git"
+  config.wiki_repository = ENV['GOLLUM_WIKI_LOCATION']||"/homepage-wiki.git"
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
