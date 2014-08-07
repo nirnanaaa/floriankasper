@@ -6,11 +6,11 @@ class Page < GollumRails::Page
     meta["date"] || Time.at(0)
   end
   def start
-    DateTime.parse(meta["start"]) || Time.at(0)
+    DateTime.parse(meta["start"].to_s) || DateTime.new(1970)
   end
 
   def end
-    DateTime.parse(meta["end"]) || Time.at(0)
+    DateTime.parse(meta["end"].to_s) || DateTime.new(1970)
   end
 
 
