@@ -1,7 +1,6 @@
 class SchedulesController < ApplicationController
   def index
 
-    acs
     date = DateTime.current
     @cur_month = Date::MONTHNAMES[date.month]
     @cur_year = date.year
