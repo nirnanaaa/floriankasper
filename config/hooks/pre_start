@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 `git clone --bare https://github.com/nirnanaaa/homepage-articles.git /homepage-wiki.git`
-`cd /data && whenever -w`
+`cd /data && bundle exec whenever -w`
