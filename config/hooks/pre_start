@@ -1,9 +1,4 @@
 #!/usr/bin/env ruby
 
 `git clone --bare https://github.com/nirnanaaa/homepage-articles.git /homepage-wiki.git`
-`crontab -l > mycron`
-File.open('mycron', 'a') { |f|
-  f.puts("00 * * * * cd /homepage-wiki.git; git fetch")
-}
-
-`crontab mycron`
+`cd /data && whenever -w`
