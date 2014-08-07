@@ -20,7 +20,8 @@
 <body>
   <nav class="top-nav __heading--main">
     <div class="upper-nav __heading--sub-main">
-      <h1 class="__heading--title typography--PRIMARY-HEADING">Florian Kasper</h1>
+      <h1 class="__heading--title typography--PRIMARY-HEADING magic--hideif--IPHONE"><%=link_to "Florian Kasper", root_path %></h1>
+      <h1 class="__heading--title typography--PRIMARY-HEADING magic--displayif--IPHONE"><%=link_to "Florian", root_path %></h1>
     </div>
     <div class="lower-nav __heading--sub-secondary">
       <ul class="nav-bar __heading--icons">

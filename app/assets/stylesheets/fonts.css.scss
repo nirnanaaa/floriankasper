@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 @import 'breakpoint';
+@import 'singularitygs';
 
 $iphone: 5px 1136px;
 $normal: 1136px;
@@ -19,7 +20,8 @@ body {
 }
 
 .__heading--title { 
-  font-family: 'Stalemate', cursive; 
+  font-family: 'Stalemate', cursive;
+  font-weight: 200;
   @include breakpoint($iphone) {
     font-size: 70px;
   }
@@ -27,4 +29,20 @@ body {
     font-size: 90px;
   }
   color: #102E37;
+}
+.magic--hideif--IPHONE{
+  @include breakpoint($iphone) {
+    display: none;
+  }
+  @include breakpoint($normal) {
+    display: normal;
+  }
+}
+.magic--displayif--IPHONE{
+  @include breakpoint($iphone) {
+    display: normal;
+  }
+  @include breakpoint($normal) {
+    display: none;
+  }
 }

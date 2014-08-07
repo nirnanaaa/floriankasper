@@ -1,11 +1,10 @@
 Homepage::Application.routes.draw do
   resources :pages
+  get '(errors)/:status' => 'errors#show', constraints: {status: /\d{3}/}
   get 'schedules' => 'schedules#index', as: :index_schedules
-  
   get 'robots.txt' => 'robots#index'
   get 'sitemap.xml' => 'robots#sitemap'
   root "pages#index"
-  
   get ':id' => 'pages#show', as: :pg, constraints: { id: /.*/ }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,6 +1,7 @@
 class SchedulesController < ApplicationController
   def index
 
+    acs
     date = DateTime.current
     @cur_month = Date::MONTHNAMES[date.month]
     @cur_year = date.year
@@ -13,7 +14,7 @@ class SchedulesController < ApplicationController
 
     respond_to do |format|
       format.json do
-        render json: @pages.map{ |p| {title: p.title,date: p.date.to_i * 1000, text: p.html_data}}
+        render json: @pages.map{ |p| {title: p.title,start: p.start.to_i * 1000, text: p.html_data}}
        end
       format.html { render :index}
     end

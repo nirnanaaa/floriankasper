@@ -9,10 +9,19 @@ class PagesController < ApplicationController
       end
     end
   end
-  
+
   def show
     @page = Page.find(params[:id], Page.wiki.ref, true, false)
-    @meta[:description] = @page.description if @page.description
-    @meta[:keywords] = @page.keywords if @page.keywords
+    if @page
+      @meta[:description] = @page.description if @page.description
+      @meta[:keywords] = @page.keywords if @page.keywords
+    else
+      render_404
+    end
+  end
+
+  private
+  def render_404
+    raise ActionController::RoutingError.new('No such Article found')
   end
 end
